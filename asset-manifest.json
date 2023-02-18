@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/christmas-react/static/css/main.d8199112.css",
+    "main.js": "/christmas-react/static/js/main.b793d08e.js",
+    "static/media/home.png": "/christmas-react/static/media/home.8d7f13fcf5b05665106c.png",
+    "static/media/gift6.png": "/christmas-react/static/media/gift6.0b291ae3883293a75d6f.png",
+    "static/media/celebrate.png": "/christmas-react/static/media/celebrate.37db57e5dc4cad5f228e.png",
+    "static/media/new4.png": "/christmas-react/static/media/new4.0edd10c67d52e6cbe8a3.png",
+    "static/media/new2.png": "/christmas-react/static/media/new2.b90e85392163938a8f9c.png",
+    "static/media/giving1.png": "/christmas-react/static/media/giving1.02e657df83a100ac96f9.png",
+    "static/media/gift1.png": "/christmas-react/static/media/gift1.c15c6b6ac60414e6254e.png",
+    "static/media/giving2.png": "/christmas-react/static/media/giving2.68e3cae4db37f5c8ea4c.png",
+    "static/media/gift3.png": "/christmas-react/static/media/gift3.5b4c7f1f414f7e64c2dc.png",
+    "static/media/giving3.png": "/christmas-react/static/media/giving3.bfdf031db0983c1de71b.png",
+    "static/media/new1.png": "/christmas-react/static/media/new1.47cbe62f98d7d1eda8d9.png",
+    "static/media/gift2.png": "/christmas-react/static/media/gift2.85823fe3adc86c7cf9c0.png",
+    "static/media/gift5.png": "/christmas-react/static/media/gift5.ac5ccd8275abea35f504.png",
+    "static/media/gift4.png": "/christmas-react/static/media/gift4.80fb16b1cad6efee88eb.png",
+    "static/media/new3.png": "/christmas-react/static/media/new3.468248dca539d121b20b.png",
+    "index.html": "/christmas-react/index.html",
+    "main.d8199112.css.map": "/christmas-react/static/css/main.d8199112.css.map",
+    "main.b793d08e.js.map": "/christmas-react/static/js/main.b793d08e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8199112.css",
+    "static/js/main.b793d08e.js"
+  ]
+}
