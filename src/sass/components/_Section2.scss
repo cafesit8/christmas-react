@@ -1,0 +1,52 @@
+@use '../variables/variables' as *;
+@use '../variables/mixins' as *;
+
+.section2{
+    overflow: hidden;
+    margin-bottom: 100px;
+    @include width-height(100%, auto);
+    @include flex;
+
+    .content{
+        width: 1000px;
+
+        .subtitle{
+
+            h2{
+                text-align: center;
+                color: var(--negro)
+            }
+        }
+
+        .gifts{
+            @include flex;
+            flex-wrap: wrap;
+            gap: 40px;
+
+            .gift{
+                overflow: hidden;
+                width: 200px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+
+                .img-container{
+                    width: 100%;
+
+                    img{
+                        @include width-height(100%, 100%);
+                        object-fit: contain;
+                    }
+                }
+
+                .info{
+                    text-align: center;
+
+                    h3,p{
+                        color: var(--negro);
+                    }
+                }
+            }
+        }
+    }
+}

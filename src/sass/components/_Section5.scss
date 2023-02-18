@@ -1,0 +1,79 @@
+@use '../variables/mixins' as *;
+@use '../variables/variables' as *;
+
+.section5{
+    width: 100%;
+    margin-bottom: 120px;
+
+    .content{
+        @include width-height(780px, 380px);
+        margin: auto;
+        position: relative;
+        @media (max-width: 815px) {
+            @include width-height(100%, 380px);
+            padding: 20px;
+        }
+
+        .mySwiper{
+            @include width-height(100%, 100%);
+
+            .slide{
+                @include width-height(230px, 80%);
+                display: block;
+                border-radius: $border-radius;
+                overflow: hidden;
+                box-shadow: 0 4px 16px hsla(355, 25%, 15%, .1);
+                background-color: var(--gift-bg-color);
+                transition: .3s;
+                @media (max-width: 815px) {
+                    @include width-height(230px, 80%);
+                }
+
+                .container-img{
+                    overflow: hidden;
+                    @include width-height(100%, 60%);
+                    position: relative;
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: $btn-color;
+                        @include width-height(100%, 100%); 
+                        border-bottom-left-radius: 50%;
+                        border-bottom-right-radius: 50%;
+                        z-index: -1;
+                    }
+
+                    img{
+                        @include width-height(100%, 100%);
+                        object-fit: contain;
+                    }
+                }
+
+                .info{
+                    @include width-height(100%, 40%);
+                    @include flex;
+                    flex-direction: column;
+
+                    h4,p{
+                        color: var(--negro);
+                    }
+                    h4{
+                        font-size: 17px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .swiper-pagination{
+                span{
+                    background-color: $btn-color;
+                }
+            }
+        }
+    }
+}

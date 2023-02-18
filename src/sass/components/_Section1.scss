@@ -1,0 +1,70 @@
+@use '../variables/variables' as *;
+@use '../variables/mixins' as *;
+
+.section1{
+    overflow: hidden;
+    padding: 50px 20px;
+    @include width-height(100%, 100vh);
+    @include flex;
+
+    .content{
+        max-width: 1100px;
+        @include flex;
+
+        @media (max-width: 750px) {
+            @include width-height(100%, auto);
+            flex-direction: column;
+        }
+
+        @media (max-width: 450px) {
+            @include width-height(100%, auto);
+            flex-direction: column;
+        }
+
+        .img-container{
+            width: 50%;
+            overflow: hidden;
+            @media (max-width: 750px) {
+                @include width-height(80%, 40%);
+            }
+            
+            @media (max-width: 500px) {
+                @include width-height(100%, 50%);
+            }
+
+            img{
+                @include width-height(100%, 100%);
+                object-fit: contain;
+            }
+        }
+
+        .info{
+            @include width-height(50%, 100%);
+            @media (max-width: 750px) {
+                @include width-height(80%, 60%);
+            }
+            @media (max-width: 500px) {
+                @include width-height(100%, 50%);
+            }
+
+            h1{
+                font-size: 40px;
+                color: var(--negro);
+                @media (max-width: 750px) {
+                    font-size: 25px;
+                }
+            }
+            p{
+                font-size: 15px;
+                color: var(--negro);
+            }
+            button{
+                padding: 15px 30px;
+                border-radius: $border-radius;
+                background-color: rgb(230, 65, 65);
+                color: #fff;
+                margin-top: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@use '../variables/variables';
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Handlee&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500;700;800&family=Rubik:wght@300;400;500&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    transition: 0.3s;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border: none;
+}
+
+input{
+    border: none;
+    outline: none;
+}

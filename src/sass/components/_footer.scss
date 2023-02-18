@@ -1,0 +1,13 @@
+@use '../variables/mixins' as *;
+@use '../variables/variables' as *;
+footer{
+    width: 100%;
+    @include flex;
+    flex-direction: column;
+    padding: 30px;
+
+    h6, p{
+        font-size: 15px;
+        color: var(--negro);
+    }
+}
